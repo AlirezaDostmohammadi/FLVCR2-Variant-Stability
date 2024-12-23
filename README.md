@@ -19,7 +19,7 @@ We evaluated the impact of the Arg492Trp variant on protein stability using <a h
 ```
 clean_pdb.py 8qd0_fill.B99990007.pdb A
 ``` 
-2. Minimize structure:
+2. Minimize structure:</br>
 The WT FLVCR2 structure was minimized independently 10 times using relaxation with constraints to preserve the starting coordinates.
 The most stable (lowest-scoring) structure was selected.
 ```
