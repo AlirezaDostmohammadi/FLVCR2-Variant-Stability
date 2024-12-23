@@ -31,7 +31,7 @@ Results are available in the <a href='/MinimizingStructures/WT'>WT</a> folder. S
 The structure <a href='/MinimizingStructures/WT/8qd0_fill.B99990007_A_0004.pdb'>8qd0_fill.B99990007_A_0004.pdb</a> has the lowest energy: -996.168 REU.
 
 #### `FLVCR2` protein with the Arg492Trp variant
-1. Introduce variant and minimize structure:
+1. Introduce variant and minimize structure:</br>
 The Arg492Trp variant was introduced and minimized using the same pipeline as the WT FLVCR2 protein. Minimization was performed 10 times with constraints to preserve the starting coordinates.
 ```
 relax.static.linuxgccrelease -s 8qd0_fill.B99990007_A.pdb -relax:constrain_relax_to_start_coords -relax:ramp_constraints false -relax:respect_resfile  -packing:resfile mutatnt.resfile  
