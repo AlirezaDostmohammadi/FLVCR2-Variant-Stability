@@ -1,24 +1,24 @@
 # FLVCR2-Variant-Stability
-Characterize the impact of the identified Arg492Trp variant on the wild-type `FLVCR2` protein.
+Characterize the impact of the identified Arg492Trp variant on the WT `FLVCR2` protein.
 
-In this analysis, we introduced the variant into the FLVCR2 protein structure with <a href='https://www.rcsb.org/structure/8QD0'>PDB ID: 8QD0</a> (<a href='https://www.uniprot.org/uniprotkb/Q9UPI3/entry'>UniProtKB id: Q9UPI3</a>).
+In this analysis, we introduced the Arg492Trp variant into the FLVCR2 protein structure with <a href='https://www.rcsb.org/structure/8QD0'>PDB ID: 8QD0</a> (<a href='https://www.uniprot.org/uniprotkb/Q9UPI3/entry'>UniProtKB id: Q9UPI3</a>).
 
 ## Modeling Missing Residues
-The determined protein structure of FLVCR2 has 112 missing residues. To address these gaps, we modeled the missing residues using Modeller (version 10.6), generating 10 models. The model with the lowest molpdf score (459.43842) was selected as the best representation.
+The determined protein structure of FLVCR2 has 112 missing residues. To address these gaps, we modeled the missing residues using < a href='https://salilab.org/modeller/'>Modeller</a> (version 10.6), generating 10 models. The model with the lowest molpdf score (459.43842) was selected as the best representation.
 
 You can find the script used for modeling in the <a href='/ModelingMissingResidues'>ModelingMissingResidues</a> folder. Modeled structures are available in <a href='ModelingMissingResidues/refined_models'>refined_models</a>. Scores for each structure can be seen <a href='/ModelingMissingResidues/refine_missing_residues.py.log#L3807'>here</a>.
 
 The model <a href='ModelingMissingResidues/refined_models/8qd0_fill.B99990007.pdb'>8qd0_fill.B99990007.pdb</a> has the lowest molpdf score: 459.43842.
 
 ## Minimizing Structures
-We evaluated the impact of the Arg492Trp variant on protein stability using Rosetta (version 3.14) and DynaMut2 to ensure robust and complementary analyses.
+We evaluated the impact of the Arg492Trp variant on protein stability using <a href='https://rosettacommons.org/software/'> Rosetta </a>(version 3.14) and <a href='https://biosig.lab.uq.edu.au/dynamut2/'>DynaMut2</a> to ensure robust and complementary analyses.
 
 ### Evaluated the impact of the Arg492Trp variant on protein stability using Rosetta
 #### wild-type `FLVCR2` protein
 1. clean structure:
-   `
+``
 clean_pdb.py 8qd0_fill.B99990007.pdb A
-   `  
+``  
 2. Minimize structure
 The WT FLVCR2 structure was minimized independently 10 times using relaxation with constraints to preserve the starting coordinates.
 The most stable (lowest-scoring) structure was selected.
