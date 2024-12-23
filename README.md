@@ -4,7 +4,7 @@ Characterize the impact of the identified Arg492Trp variant on the WT `FLVCR2` p
 In this analysis, we introduced the Arg492Trp variant into the FLVCR2 protein structure with <a href='https://www.rcsb.org/structure/8QD0'>PDB ID: 8QD0</a> (<a href='https://www.uniprot.org/uniprotkb/Q9UPI3/entry'>UniProtKB id: Q9UPI3</a>).
 
 ## Modeling Missing Residues
-The determined protein structure of FLVCR2 has 112 missing residues. To address these gaps, we modeled the missing residues using < a href='https://salilab.org/modeller/'>Modeller</a> (version 10.6), generating 10 models. The model with the lowest molpdf score (459.43842) was selected as the best representation.
+The determined protein structure of FLVCR2 has 112 missing residues. To address these gaps, we modeled the missing residues using <a href='https://salilab.org/modeller/'>Modeller</a> (version 10.6), generating 10 models. The model with the lowest molpdf score (459.43842) was selected as the best representation.
 
 You can find the script used for modeling in the <a href='/ModelingMissingResidues'>ModelingMissingResidues</a> folder. Modeled structures are available in <a href='ModelingMissingResidues/refined_models'>refined_models</a>. Scores for each structure can be seen <a href='/ModelingMissingResidues/refine_missing_residues.py.log#L3807'>here</a>.
 
