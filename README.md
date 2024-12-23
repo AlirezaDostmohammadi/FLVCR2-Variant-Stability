@@ -13,7 +13,7 @@ The model <a href='ModelingMissingResidues/refined_models/8qd0_fill.B99990007.pd
 ## Minimizing Structures
 We evaluated the impact of the Arg492Trp variant on protein stability using <a href='https://rosettacommons.org/software/'> Rosetta </a>(version 3.14) and <a href='https://biosig.lab.uq.edu.au/dynamut2/'>DynaMut2</a> to ensure robust and complementary analyses.
 
-### Evaluated the impact of the Arg492Trp variant on protein stability using Rosetta
+### Evaluating the impact of the Arg492Trp variant on protein stability using Rosetta
 #### wild-type `FLVCR2` protein
 1. clean structure:
 ```
