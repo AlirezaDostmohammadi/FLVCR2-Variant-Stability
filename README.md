@@ -17,7 +17,7 @@ We evaluated the impact of the Arg492Trp variant on protein stability using <a h
 #### wild-type `FLVCR2` protein
 1. clean structure:
 ```
-clean_pdb.py 8qd0_fill.B99990007.pdb A
+{ROSETTA_PATH}/main/tools/protein_tools/scripts/clean_pdb.py 8qd0_fill.B99990007.pdb A
 ``` 
 2. Minimize structure:</br>
 The WT FLVCR2 structure was minimized independently 10 times using relaxation with constraints to preserve the starting coordinates.
