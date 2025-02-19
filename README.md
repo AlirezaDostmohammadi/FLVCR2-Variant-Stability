@@ -23,7 +23,7 @@ We evaluated the impact of the Arg492Trp variant on protein stability using <a h
 The WT FLVCR2 structure was minimized independently 10 times using relaxation with constraints to preserve the starting coordinates.
 The most stable (lowest-scoring) structure was selected.
 ```
-relax.static.linuxgccrelease -s 8qd0_fill.B99990007_A.pdb -relax:constrain_relax_to_start_coords -relax:ramp_constraints false -ex1 -ex2 
+{ROSETTA_PATH}/main/source/bin/relax.static.linuxgccrelease -s 8qd0_fill.B99990007_A.pdb -relax:constrain_relax_to_start_coords -relax:ramp_constraints false -ex1 -ex2 
 -use_input_sc -flip_HNQ -no_optH false  -nstruct 10  -out:file:scorefile af_relaxed_8qd0.WT_A.sc
 ```
 Results are available in the <a href='/MinimizingStructures/WT'>WT</a> folder. Scores for minimized structures are in <a href='MinimizingStructures/WT/af_relaxed_8qd0.WT_A.sc'>af_relaxed_8qd0.WT_A.sc</a>.
@@ -34,7 +34,7 @@ The structure <a href='/MinimizingStructures/WT/8qd0_fill.B99990007_A_0004.pdb'>
 1. Introduce variant and minimize structure:</br>
 The Arg492Trp variant was introduced and minimized using the same pipeline as the WT FLVCR2 protein. Minimization was performed 10 times with constraints to preserve the starting coordinates.
 ```
-relax.static.linuxgccrelease -s 8qd0_fill.B99990007_A.pdb -relax:constrain_relax_to_start_coords -relax:ramp_constraints false -relax:respect_resfile  -packing:resfile mutatnt.resfile  
+{ROSETTA_PATH}/main/source/bin/relax.static.linuxgccrelease -s 8qd0_fill.B99990007_A.pdb -relax:constrain_relax_to_start_coords -relax:ramp_constraints false -relax:respect_resfile  -packing:resfile mutatnt.resfile  
  -ex1 -ex2 -use_input_sc -flip_HNQ -no_optH false  -nstruct 10  -out:file:af_relaxed_8qd0.Arg492Trp_A.sc
 ```
 Results are available in the <a href='/MinimizingStructures/Arg492Trp'>Arg492Trp</a> folder. Scores for minimized structures are in <a href='MinimizingStructures/Arg492Trp/af_relaxed_8qd0.Arg492Trp_A.sc'>af_relaxed_8qd0.Arg492Trp_A.sc</a>.
